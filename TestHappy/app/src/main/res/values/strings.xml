@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TestHappy</string>
+    <string name="happy_button">Be Happy!</string>
+</resources>
