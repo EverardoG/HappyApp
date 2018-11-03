@@ -1,9 +1,9 @@
 from flask import Flask, redirect, url_for, request, render_template
 import json
-from flask_wtf import Form
-from wtforms import TextField
+# from flask_wtf import Form
+# from wtforms import TextField
 app = Flask(__name__)
-from NamesCode.Web_Name_Feedback import main as train_names
+# from NamesCode.Web_Name_Feedback import main as train_names
 
 #adjust_weight_web(adjust, key_word ,category_dict, pickup_line, all_dicts)
 # adjust is modifier
