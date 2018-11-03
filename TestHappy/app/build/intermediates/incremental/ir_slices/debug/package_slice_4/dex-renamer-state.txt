@@ -1,4 +1,0 @@
-#Sat Nov 03 00:22:48 EDT 2018
-base.0=C\:\\Users\\epan\\Documents\\GitHub\\Lab1015\\TestHappy\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
-path.0=classes.dex
-renamed.0=classes.dex

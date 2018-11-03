@@ -35,5 +35,7 @@ def sendEmailTo(to):
         server.sendmail(sent_from, to, email_text)
         server.close()
 
+        return True
     except:
         print("Email not found")
+        return False
