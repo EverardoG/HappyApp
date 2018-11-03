@@ -1,40 +1,16 @@
 """The first step is to create an SMTP object, each object is used for connection
 with one server."""
 
+#TODO: Add key for email/password so it's not online
+
 import smtplib
 
-#gmail_user = 'beehappytest1@gmail.com'
-#gmail_password = 'b33h@ppy'
-
-def sendEmailFrom(gmail_user, gmail_password):
-
-    sent_from = gmail_user
-    to = ['amyngph@gmail.com']
-    subject = "Happy"
-    body = "Hey, what's up?"
-
-
-    email_text = """\
-    From: %s
-    To: %s
-    Subject: %s
-
-    %s
-    """ % (sent_from, ", ".join(to), subject, body)
-
-    email_text = "asdf"
-
-    server = smtplib.SMTP('smtp.gmail.com', 587)
-    server.ehlo()
-    server.starttls()
-    server.login(gmail_user, gmail_password)
-    server.sendmail(sent_from, to, email_text)
-    server.close()
-
-def sendEmailTo(gmail_user, gmail_password, to):
+def sendEmailTo(to):
     """
-    to should be a list of emails to send to 
+    to should be a list of emails to send to
     """
+    gmail_user = 'beehappytest1@gmail.com'
+    gmail_password = 'b33h@ppy'
 
     sent_from = gmail_user
     subject = "Happy"
@@ -58,9 +34,5 @@ def sendEmailTo(gmail_user, gmail_password, to):
     server.sendmail(sent_from, to, email_text)
     server.close()
 
-#Next, log in to the server
-#server.login("beehappy@gmail.com", "b33h@ppy")
-
-#Send the mail
-#msg = "Hello!" # The /n separates the message from the headers
-#server.sendmail("h5861491@nwytg.net", "h5861491@nwytg.net", msg)
+if __name__ == "__main__":
+    sendEmailTo('amyngph@gmail.com')
