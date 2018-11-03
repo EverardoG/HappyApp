@@ -14,7 +14,7 @@ def sendEmailTo(to):
         gmail_password = 'b33h@ppy'
 
         sent_from = gmail_user
-        subject = "Happy"
+        subject = "Bee Happy!"
         body = "Hey, what's up?"
 
 
